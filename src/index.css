@@ -13,3 +13,10 @@ html, body, #root {
   min-height: 100vh;
   width: 100vw;
 }
+
+body {
+  direction: ltr;
+   font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
