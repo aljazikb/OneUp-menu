@@ -1,17 +1,35 @@
  
 import './photo/oneupLogo.jpg'
+import logo from './photo/oneupLogo.jpg';
+import Card from "./component/Card";
+import Footer from "./component/Footer"
+
 
 function App() {
   
 
   return (
     <>
-    <div className="w-screen min-h-screen bg-[url(.\photo\oneupLogo.jpg)] flex items-center justify-center overflow-x-hidden">
-      <h1 className="text-white text-3xl font-bold underline p-4">
-        Hello world!
-      </h1>
-    </div>
+    <div className=" w-screen min-h-screen flex flex-col  ">
+      <div className="w-screen min-h-screen flex items-center justify-center overflow-x-hidden bg-bottom-left bg-no-repeat pb-10 " style={{ backgroundImage: `url(${logo})` }}>
+        <div className=" bg-purple-900/75 rounded-lg px-4 py-4 mt-100 flex flex-col gap-6">
+           <Card/>
+           <Card/>
+           <Card/>
+           <Card/>
+           <Card/>
+           <Card/>
+        </div>
+
+
+      
+         
+      
+
+     </div>
+      <Footer />
     
+    </div>
    
     </>
   )
