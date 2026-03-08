@@ -8,7 +8,7 @@ import IMG_3039 from "./photo/IMG_3039.PNG"
 const Items = [
     {
         id: 1,
-        name: "Chicken Fsjita",
+        name: "كوكيز",
         desc: "BBQ sauce with seasoned grilled chicken",
         img: IMG_3033,
         price: 12.5
