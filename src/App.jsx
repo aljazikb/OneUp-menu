@@ -1,6 +1,4 @@
  
-
-import './App.css'
 import './photo/oneupLogo.jpg'
 
 function App() {
@@ -8,12 +6,13 @@ function App() {
 
   return (
     <>
-    <div className="w-screen h-screen bg-gradient-to-r from-cyan-500 to-blue-500">
-      <h1 className="text-3xl font-bold underline">
-         Hello world!
+    <div className="w-screen min-h-screen bg-[url(.\photo\oneupLogo.jpg)] flex items-center justify-center overflow-x-hidden">
+      <h1 className="text-white text-3xl font-bold underline p-4">
+        Hello world!
       </h1>
     </div>
-      
+    
+   
     </>
   )
 }
