@@ -5,7 +5,7 @@ import IMG_3036 from "./photo/IMG_3036.PNG"
 import IMG_3037 from "./photo/IMG_3037.PNG"
 import IMG_3039 from "./photo/IMG_3039.PNG"
 
-const items = [
+const Items = [
     {
         id: 1,
         name: "Chicken Fsjita",
@@ -50,4 +50,4 @@ const items = [
     },
 ];
 
-export default items;
+export default Items;
