@@ -9,44 +9,44 @@ const Items = [
     {
         id: 1,
         name: "كوكيز",
-        desc: "BBQ sauce with seasoned grilled chicken",
+        desc: "501Cal",
         img: IMG_3033,
-        price: 12.5
+        price: 9.9
     },
     {
         id: 2,
-        name: "Chicken Mushtoom",
-        desc: "Italian sausage, ham, black olive",
+        name: "بودينق الشوكولاته",
+        desc: "119Cal",
         img: IMG_3034,
-        price: 14.5
+        price: 11.99
     },
     {
         id: 3,
-        name: "Chicken Noodles",
-        desc: "Bacon, ham sausage",
+        name: "فرنش توست",
+        desc: "640Cal",
         img: IMG_3035 ,
-        price: 12.5
+        price: 15.99
     },
     {
         id: 4,
-        name: "Pasta Salmon",
-        desc: "Sliced mushrooms, green pepper, red onion, tomato and pizza mozzarella",
+        name: "قهوة سوداء حار- بار كبير",
+        desc: "3Cal",
         img: IMG_3036,
-        price: 11.5
+        price: 6.9
     },
     {
         id: 5,
-        name: "Chicken Peanut Buttor",
-        desc: "Italian sausage, pepperoni, sliced mushroom",
+        name: "قهوة سوداء حار-بارد صغير",
+        desc: "2Cal",
         img:IMG_3037,
-        price: 14.5
+        price: 4.9
     },
     {
         id: 6,
-        name: "Pepperoni",
-        desc: "Double pepperoni and extra pizza mozzarella.",
+        name: "كرنشي شوكولاته",
+        desc: "70Cal",
         img: IMG_3039,
-        price: 9.99
+        price: 13.99
     },
 ];
 
