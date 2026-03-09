@@ -1,7 +1,11 @@
 
 import headerImg from "/src/photo/IMG_3061.PNG"
 
-function Header(){
+const categories = ["المشروبات","القهوة", "الحلا","الكل"]
+
+function Header({ activeCategory, setActiveCategory }){
+
+  
 
     return (
         <>
@@ -16,12 +20,12 @@ function Header(){
             <div className="absolute inset-0 bg-black/50" />
         
             {/* Content */}
-            <div className="relative z-10 flex flex-col items-center justify-center h-full gap-3 px-4">
+            <div className="relative z-10 flex flex-col items-center justify-end h-full gap-3 px-4 pb-4">
               
-              {/* Brand name */}
+              {/* Brand name
               <h1 className="text-white text-4xl font-extrabold tracking-widest drop-shadow-lg uppercase">
                 OneUp
-              </h1>
+              </h1> */}
               <p className="text-white/70 text-sm tracking-widest uppercase">Follow us</p>
         
               {/* Social icons */}
@@ -65,21 +69,13 @@ function Header(){
 
            {/* Category Filter Bar */}
           <div className="w-full bg-white/10 backdrop-blur-sm px-4 py-3 overflow-x-auto">
-            <div className="flex items-center gap-3 w-max mx-auto">
+            <div className="flex items-center gap-3 w-max mx-auto ">
               
-              {[
-                { label: "الكل"   },
-                { label: "قهوة"  },
-                { label: "الحلا" },
-                { label: "المشروبات"     },
-                
-              ].map((cat) => (
-                <button
-                  key={cat.label}
-                  className="flex flex-col items-center gap-1 px-4 py-2 rounded-xl bg-white/20 active:bg-purple-600/55 text-black text-xs font-semibold tracking-wide transition-colors duration-200 backdrop-blur-sm border border-white/20 whitespace-nowrap"
-                >
-                  <span className="text-xl">{cat.emoji}</span>
-                  {cat.label}
+             { categories.map((labels) => (
+                <button key={labels.label} onClick={()=>setActiveCategory(labels)}
+                 className={`cursor-pointer px-4 py-2 rounded-xl text-black text-xs font-semibold tracking-wide transition-colors duration-200 border border-white/20 whitespace-nowrap
+                     ${ activeCategory=== labels ? "bg-purple-500/50" : "bg-white/20 hover:bg-purple-200 active:bg-purple-600"}`}>
+                  {labels}
                 </button>
               ))}
 
